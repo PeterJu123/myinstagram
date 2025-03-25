@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+
+#app-container{
+    height:100vh;
+    display:flex;
+}
+
+#main-wrapper{
+    width:60%;
+}
+
+
+
+@media (max-width:1054px){
+    #main-wrapper{
+        width:100%;
+    }
+
+    #sidebar-wrapper{
+        display: none;
+    }
+}

@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+#sidebar-wrapper{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#sidebar-container{
+    height:60vh;
+    width:360px;
+    padding:2em;
+}
+
+.sidebar-user-container{
+    display: flex;
+    height:40px;
+    width: 100%;
+}
+
+#switch-btn-container{
+    flex:1;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.sidebar-btns{
+    height:2em;
+    background-color: transparent;
+    color:blue;
+    font-size: 0.9em;
+    border: none;
+}
+
+.sidebar-btns:hover{
+    color: black;
+}
+
+.id-AKA{
+    margin:0 1em;
+    height:40px;
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    justify-content: center;
+}
+
+.aka{
+    font-size: 0.8em;
+    color:gray
+}
+
+.sidebar-user-img{
+    border: 1px solid;
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+}
+
+.suggestions{
+    padding:1em 0;
+}
+
+#suggestions-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#suggestions-body{
+    display: flex;
+    flex-direction: column;
+    gap:1em;
+}
