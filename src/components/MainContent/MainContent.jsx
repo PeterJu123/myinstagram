@@ -46,7 +46,7 @@ function MainContent(){
                 <div className="story-users">
                     <button className='story-btn'>
                         <i className='story-user-img fa fa-user fa-2x' />
-                        <p className='story-user-name'>Paul</p>
+                        <p className='story-user-name'>Costa</p>
                     </button>
                 </div>
             </div>
