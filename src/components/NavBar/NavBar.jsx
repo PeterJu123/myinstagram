@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import './NavBar.css'
 import "font-awesome/css/font-awesome.min.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Link } from 'react-router-dom'
 
 
 
@@ -152,7 +153,7 @@ function NavBar() {
             </div>
 
             {/*explore button*/}
-            <a className="nav-link" id="explore" href="./pages/explore/" >
+            <a className="nav-link" id="explore" as={Link} to="./pages/explore" >
               <i className='fa fa-compass fa-2x'></i><span className='nav-text'>{width >= 1266 ? "Explore" : ""}</span>
             </a>
 
