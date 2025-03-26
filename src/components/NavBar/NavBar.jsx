@@ -153,7 +153,7 @@ function NavBar() {
             </div>
 
             {/*explore button*/}
-            <a className="nav-link" id="explore" as={Link} to="./pages/explore" >
+            <a className="nav-link" id="explore" as={Link} to="../pages/explore" >
               <i className='fa fa-compass fa-2x'></i><span className='nav-text'>{width >= 1266 ? "Explore" : ""}</span>
             </a>
 

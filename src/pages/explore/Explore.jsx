@@ -1,3 +1,6 @@
+import NavBar from '../../components/NavBar/NavBar.jsx'
+
+
 function Explore(){
 
     return(
