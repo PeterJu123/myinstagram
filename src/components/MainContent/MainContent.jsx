@@ -2,8 +2,6 @@ import {useState, useEffect, useRef} from 'react';
 import './MainContent.css'
 import "font-awesome/css/font-awesome.min.css";
 
-//changes made
-
 function MainContent(){
     
     const [mainContainerWidth,setMainContainerWidth] = useState(window.innerWidth)
