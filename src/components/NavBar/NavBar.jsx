@@ -98,6 +98,7 @@ function NavBar() {
           <a href="http://localhost:5173/"><i className={`fa fa-instagram fa-2x ${width>=1266? "hide" : "show"}`}></i></a>
           <a href="http://localhost:5173/"><span className={`logo-text ${width >=1266 ? 'show': 'hide'}`}>Instagram</span></a>
         </div>
+
         <div id="nav-btns-container">
             <a className="nav-link" id="home" href="http://localhost:5173/" >
               <i className='fa fa-home fa-2x'></i><span className='nav-text'>{width >= 1266 ? "Home" : ""}</span>
@@ -105,7 +106,7 @@ function NavBar() {
             <a className="nav-link" id="search" href="#" onClick={toggleSearchBox}>
                 <i className='fa fa-search fa-2x'></i><span className='nav-text'>{width >= 1266 ? "Search" : ""}</span>
             </a>
-            
+
             {/* Search Box*/}
             <div id="search-box" ref={searchBoxRef}>
               <div id="search-box-head">
@@ -123,10 +124,10 @@ function NavBar() {
                             ref={searchCancelBtnRef}
                             onMouseDown={cancelBtnHandler}
                             style={{display: isFocused? "block" : "none"}}
-                            
                             >X</button>
                   </div>
               </div>
+
               <div id="search-box-body">
                 <h4>Recent</h4>
                 <div id="search-results-container">
@@ -142,7 +143,6 @@ function NavBar() {
                             <span className='sidebar-user-id'>{user.id}</span>  
                             <span className="aka">{user.aka}</span>
                           </div>
-                          
                         </a>
                       </div>
                     )})
@@ -151,25 +151,38 @@ function NavBar() {
               </div>
             </div>
 
-            <a className="nav-link" id="explore" href="https://instagram.com/explore/" >
+            {/*explore button*/}
+            <a className="nav-link" id="explore" href="./pages/explore/" >
               <i className='fa fa-compass fa-2x'></i><span className='nav-text'>{width >= 1266 ? "Explore" : ""}</span>
             </a>
+
+            {/*reels button */}
             <a className="nav-link" id="reels-btn" href="https://instagram.com/reels/" >
               <i className='fa fa-film fa-2x'></i><span className='nav-text'>{width >= 1266 ? "Reels" : ""}</span>
             </a>
+
+            {/*message button */}
             <a className="nav-link" id="messages-btn" href="https://instagram.com/direct/inbox/" >
               <i className='fa fa-comments fa-2x'></i><span className='nav-text'>{width >= 1266 ? "Messages" : ""}</span>
             </a>
+
+            {/*notifications button */}
             <a className="nav-link" id="notifications-btn" href="https://instagram.com/#" >
               <i className='fa fa-heart fa-2x'></i><span className='nav-text'>{width >= 1266 ? "Notifications" : ""}</span>
             </a>
+
+            {/*create button */}
             <a className="nav-link" id="create-btn" href="https://instagram.com/#" >
               <i className='fa fa-plus fa-2x'></i><span className='nav-text'>{width >= 1266 ? "Create" : ""}</span>
             </a>
+
+            {/*profile button */}
             <a className="nav-link" id="profile-btn" href="https://instagram.com/username/" >
               <i className='fa fa-user fa-2x'></i><span className='nav-text'>{width >= 1266 ? "Profile" : ""}</span>
             </a>
         </div>
+
+        {/*threads and more button */}
         <div id="threads-more-container">
           <a className="nav-link" id="threads-btn" href="https://meta.com" >
             <i className='fa fa-hashtag fa-2x'></i><span className='nav-text'>{width >= 1266 ? "Threads" : ""}</span>
