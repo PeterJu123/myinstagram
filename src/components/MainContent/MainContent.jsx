@@ -2,6 +2,8 @@ import {useState, useEffect, useRef} from 'react';
 import './MainContent.css'
 import "font-awesome/css/font-awesome.min.css";
 
+//changes made
+
 function MainContent(){
     
     const [mainContainerWidth,setMainContainerWidth] = useState(window.innerWidth)
@@ -46,7 +48,7 @@ function MainContent(){
                 <div className="story-users">
                     <button className='story-btn'>
                         <i className='story-user-img fa fa-user fa-2x' />
-                        <p className='story-user-name'>Costa</p>
+                        <p className='story-user-name'>Paul</p>
                     </button>
                 </div>
             </div>
@@ -149,7 +151,7 @@ function MainContent(){
 
                     {/* image */}
                     <div className='main-img-container'>
-                        <img id="content-img" src="/sampleContentImage.JPG" alt="content-image"></img>
+                        <img id="content-img" src="./sampleContentImage.JPG" alt="content-image"></img>
                     </div>
 
                     {/* buttons */}
