@@ -73,7 +73,7 @@ function MainContent(){
 
                     {/* image */}
                     <div className='main-img-container'>
-                        <img id="content-img" src="/sampleContentImage.JPG" alt="content-image"></img>
+                        <img id="content-img" src="./sampleContentImage.JPG" alt="content-image"></img>
                     </div>
 
                     {/* buttons */}
